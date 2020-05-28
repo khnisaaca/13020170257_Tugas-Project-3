@@ -11,17 +11,18 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF86838A"
+        android:background="#99b898"
         app:menu="@menu/menu">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Bangun Ruang"
-            android:textSize="20dp"
-            android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:textFontWeight="700" />
+            android:text="Bangun Ruang"
+            android:textFontWeight="700"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -29,20 +30,20 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@color/design_default_color_secondary_variant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="309dp"
+        android:layout_height="217dp"
         android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:srcCompat="@drawable/imag" />
+        app:srcCompat="@drawable/bangun_ruang_cover" />
 
     <TextView
         android:id="@+id/textView"
@@ -51,8 +52,8 @@
         android:layout_marginTop="36dp"
         android:fontFamily="serif"
         android:text="MENU"
+        android:textColor="@android:color/widget_edittext_dark"
         android:textSize="30dp"
-        android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,7 @@
             android:text="KERUCUT"
             android:textSize="20dp"
             android:textColor="@android:color/white"
-            android:background="#FF86838A"
+            android:background="#99b898"
             android:layout_marginRight="25dp"
             />
         <Button
@@ -84,7 +85,7 @@
             android:text="BALOK"
             android:textSize="20dp"
             android:textColor="@android:color/white"
-            android:background="#FF86838A"/>
+            android:background="#99b898"/>
     </LinearLayout>
 
     <LinearLayout
@@ -101,7 +102,7 @@
             android:id="@+id/prisma"
             android:layout_marginRight="25dp"
             android:textColor="@android:color/white"
-            android:background="#FF86838A"/>
+            android:background="#99b898"/>
         <Button
             android:layout_width="150dp"
             android:layout_height="match_parent"
@@ -109,6 +110,6 @@
             android:textSize="20dp"
             android:text="LIMAS SEGILIMA"
             android:textColor="@android:color/white"
-            android:background="#FF86838A"/>
+            android:background="#99b898"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
